@@ -1,0 +1,26 @@
+class Employee{
+	int id;
+	String name;
+	int contact;
+	int minBalance;
+	
+	Employee(int id, String name, int contact, int minBalance){
+		this.id = id;
+		this.name = name;
+		this.contact = contact;
+		this.minBalance = minBalance;
+	}
+	
+	public String details(){
+		return("ID: "+id+" Name: "+name+"Contact: "+contact+"Minimum Balance: "+minBalance);
+	}
+}
+public class EmployeeApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp = new Employee(5421, "Arpit", 9629354715, 10000);
+		
+	}
+
+}

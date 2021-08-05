@@ -1,0 +1,66 @@
+package com.inheritance;
+
+class Company{
+	final String name = " M/STechment Technology Pvt. Ltd.";
+	protected String location;
+	
+	public void details() {
+		System.out.println(name + " in "+ location);
+	}
+}
+
+class Department extends Company{
+	private String dept;
+	
+	public String getDept() {
+		return dept;
+	}
+
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+	
+}
+
+class Designation extends Department{
+	private int empID;
+	private String name;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+
+	public int getEmpID() {
+		return empID;
+	}
+
+	public void setEmpID(int empID) {
+		this.empID = empID;
+	}
+	
+	
+}
+public class Multilevel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Department dept = new Department();
+		dept.setDept("Engineering");
+		dept.details();
+		dept.getDept();
+		
+		Designation designation = new Designation();
+		designation.setEmpID(123);
+		designation.getEmpID();
+		designation.setName("Bob Marley");
+		designation.getName();
+		designation.setDept("Operations");
+		designation.getDept();
+	}
+
+}

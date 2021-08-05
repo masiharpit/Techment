@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Marks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter how many marks you want to enter: ");
+		int number_of_marks = sc.nextInt();
+		int[] marks = new int[number_of_marks];
+		System.out.println("Enter the "+number_of_marks+" marks: ");
+		for(int i=0; i<marks.length; i++) {
+			marks[i] = sc.nextInt();
+		}
+		System.out.println("Marks obtained: ");
+		for(int j=0; j<marks.length; j++) {
+			System.out.println(marks[j]);
+		}
+		int sum_of_marks = 0;
+		for(int k = 0; k<marks.length; k++) {
+			sum_of_marks += marks[k];
+			System.out.println("Total marks obtained: "+sum_of_marks);
+		}
+		
+	}
+
+}

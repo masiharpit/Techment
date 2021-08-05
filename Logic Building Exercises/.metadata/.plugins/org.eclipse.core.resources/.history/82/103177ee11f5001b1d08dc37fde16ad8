@@ -1,0 +1,21 @@
+class Employee{
+	int id;
+	String name;
+	long contact;
+	int minBalance;
+	
+	Employee(int id, String name, long contact, int minBalance){
+		this.id = id;
+		this.name = name;
+		this.contact = contact;
+		this.minBalance = minBalance;
+	}
+}
+public class EmployeeApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

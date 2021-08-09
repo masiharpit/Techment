@@ -55,7 +55,6 @@ class Quiz{
 		
 		while(itr.hasNext()) {
 			
-			if(itr.next.ans.equals())
 		}
 	}
 }

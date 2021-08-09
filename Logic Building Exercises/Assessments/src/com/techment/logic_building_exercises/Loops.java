@@ -10,6 +10,7 @@ public class Loops {
 		for(int i=1; i<=limit; i++) {
 			System.out.println(table_of +" X "+ i+" = "+table_of*i);
 		}
+		sc.close();
 	}
 
 }

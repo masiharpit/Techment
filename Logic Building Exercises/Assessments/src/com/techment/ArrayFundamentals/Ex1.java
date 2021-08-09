@@ -1,4 +1,4 @@
-package com.techment.arrayFundamentals;
+package com.techment.ArrayFundamentals;
 
 import java.util.Arrays;
 

@@ -1,0 +1,9 @@
+OCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.techment.Employee" table="emp">
+		<id name="id"></id>
+		<property name="name" column="name"></property>
+		<property name="dept" column="department"></property>
+	</class>
+</hibernate-mapping>
